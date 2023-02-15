@@ -7,7 +7,7 @@ import 'package:gradient_maker/gradscreen.dart';
 import 'package:gradient_maker/main.dart';
 import 'package:gradient_maker/styles/textStyles.dart';
 import 'package:provider/provider.dart';
-import 'dart:html' as html;
+// import 'dart:html' as html;
 
 class TopBar extends StatefulWidget {
   const TopBar({Key? key}) : super(key: key);
@@ -58,10 +58,11 @@ final  topbarColor = Color.fromARGB(255, 226, 243, 245);
                         
                   //         )))),
                   onPressed: () async {
-                    html.window.open(
-                        'https://www.youtube.com/watch?v=jHOHo_xu9f4', "_blank");
+                    print("=================");
+                    // html.window.open(
+                    //     'https://www.youtube.com/watch?v=jHOHo_xu9f4', "_blank");
                   },
-                  icon: Container(
+                  icon: SizedBox(
                       height: topbarH * 0.8,
                       child: Image.asset(
                         "assets/youtube.png",

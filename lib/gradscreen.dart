@@ -69,8 +69,8 @@ class _GradientCreatorState extends State<GradientCreator> {
         backgroundColor: Colors.black,
         body: Column(
           children: [
-            TopBar(),
-            Container(
+            const TopBar(),
+            SizedBox(
               height: h - topbarH,
               child: Stack(fit: StackFit.expand, children: const [
                 GradientMainBox(),

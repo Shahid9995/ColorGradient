@@ -1,11 +1,9 @@
-import 'dart:developer';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:gradient_maker/global.dart';
 import 'package:gradient_maker/gradprovder.dart';
 import 'package:gradient_maker/gradscreen.dart';
-import 'package:gradient_maker/aignmnet_pair.dart';
 import 'package:provider/provider.dart';
 
 double h = 800;
@@ -47,7 +45,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     randomNo = Random().nextInt(colorsPairs.length );
-
     return MultiProvider(
       providers: [ChangeNotifierProvider(create: (context) => GradProvider())],
       child: MaterialApp(
@@ -59,19 +56,16 @@ class MyApp extends StatelessWidget {
           home: Builder(builder: (context) {
             w = MediaQuery.of(context).size.width;
             h = MediaQuery.of(context).size.height;
-
             colorSliderBarH = h * 0.05;
             colorListBoxW = tileModeW * 4 + 4 * (5 * 2);
             colorListBoxH = h * 0.6;
             double leftsideW = w - colorListBoxW;
-
             gradeSelectBoxW = h * 0.1;
             mainBoxH = h - topbarH - colorSliderBarH - slidersBoxH * 2 - 10;
             demoBoxSizeW = mainBoxH;
             demoBoxSizeH = mainBoxH;
             alignOptionsBoxW = w - colorListBoxW;
             alignOptionsBoxH = h * 0.1;
-
             pointRad = 12;
             sliderWidth = w - colorListBoxW - sliderPad;
             textBoxSizeW = leftsideW * 0.32;
