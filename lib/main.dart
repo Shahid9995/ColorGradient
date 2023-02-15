@@ -5,7 +5,7 @@ import 'package:gradient_maker/global.dart';
 import 'package:gradient_maker/gradprovder.dart';
 import 'package:gradient_maker/gradscreen.dart';
 import 'package:provider/provider.dart';
-
+// latest working
 double h = 800;
 double w = 800;
 double colorListBoxW = w * 0.18;
